@@ -1,0 +1,23 @@
+input.input_avatar {
+ 	position:absolute;
+ 	right:0;
+ 	top:-40;
+ 	/*font-size:600px;*/
+ 	opacity:0;
+	-moz-opacity:0;
+ 	filter:alpha(opacity=0);
+ 	cursor:pointer;
+ 	text-align:right;
+	height:81px;
+ }
+ 
+ .inputfile {
+ 	position:relative;
+ 	width:81px;
+ 	height:81px;
+ 	overflow:hidden;
+	padding-top:0px;
+	margin-top:0px;
+ 	background:url(/images/photo.jpg) no-repeat right top;
+	cursor:pointer;
+ }
