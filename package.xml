@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.9.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfWidgetFormAvatarPlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>A custom file</summary>
+ <description>Input field will be seen as a default picture. 
+Default picture will be automatically changed by file selected. The file will be uploaded once selected. A preview will be automatically generated once file selected / uploaded.</description>
+ <lead>
+  <name>orchidcreation.com</name>
+  <user>Stef</user>
+  <email>stephane@orchidcreation.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2012-05-02</date>
+ <time>12:08:29</time>
+ <version>
+  <release>1.0.4</release>
+  <api>1.0.1</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+<license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>
+-
+ </notes>
+<contents>
+  <dir name="/">
+  	<file md5sum="07b47655cad08467e716a9b805175fb1" name="lib/helper/ThumbHelper.php" role="data"/>
+  	<file md5sum="a9f49a1b159a0370f5e269fded659b02" name="lib/widget/sfWidgetFormAvatar.class.php" role="data"/>
+  	<file md5sum="1ed0cd4de8f75fa2be2fb31b7a2ac424" name="lib/class.upload.php" role="data"/>
+  	<file md5sum="c773fa61d600619b8e77c7c2db88ce16" name="modules/avatar/actions/actions.class.php" role="data"/>
+  	<file md5sum="d41d8cd98f00b204e9800998ecf8427e" name="modules/avatar/template/uploadSuccess.php" role="data"/>
+  	<file md5sum="7d6e4f19e0332c0e8f074cbddd4c181c" name="web/css/avatar.css" role="data"/>
+  	<file md5sum="8bddd48d898c59ca1382083bd1dec869" name="web/images/ico-add.png" role="data"/>
+  	<file md5sum="11188b5f7d29016c1b75601d16fc5710" name="web/images/loading.gif" role="data"/>
+  	<file md5sum="beed136cd67466e8f353cb1a04ed14ab" name="web/js/ajaxfileupload.js" role="data"/>
+  	<file md5sum="beed136cd67466e8f353cb1a04ed14ab" name="README" role="data"/>
+  	<file md5sum="beed136cd67466e8f353cb1a04ed14ab" name="LICENSE" role="data"/>
+ </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+   <package>
+        <name>sfImageTransformPlugin</name>
+        <channel>plugins.symfony-project.org</channel>
+        <min>1.4.1</min>
+   </package>
+   
+   <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.4.0</min>
+        <max>1.4.2</max>
+
+      </package>
+   
+   
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+</package>
