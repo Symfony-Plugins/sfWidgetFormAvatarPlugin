@@ -1,0 +1,71 @@
+sfWidgetFormAvatarPlugin
+=================
+
+Input field will be seen as a default picture. 
+Default picture will be automatically changed by file selected. 
+The file will be uploaded once selected. A preview will be automatically generated once file selected / uploaded.
+
+
+Installation
+------------
+
+  * Install the plugin
+
+        $ symfony plugin:install sfWidgetFormAvatarPlugin
+
+  * Clear the cache
+
+        $ symfony cache:clear
+
+
+  * Add js, css in your web folder
+
+        $ symfony plugin:publish-assets
+
+
+  * enabled the module in your settings.yml
+
+          enabled_modules:      [..,  avatar]
+
+
+  * Don't forgot to load the javascript and the stylesheet in your template
+
+          use_javascripts_for_form( $form )
+          use_stylesheets_for_form( $form )
+
+  * Set the widget in your form
+
+          $this->widgetSchema['myfield']=new sfWidgetFormAvatar();
+
+
+
+Ressources use
+--------------
+
+  * ThumbHelper  : http://www.lexik.fr/blog/symfony/symfony/generer-des-thumbs-lors-de-laffichage-dune-image-781
+  * Ajaxfileupload : http://www.phpletter.com/Our-Projects/AjaxFileUpload/ 
+
+
+Error 
+----
+
+  * ThumbHelper required mimetype autodetect so put it in your app.yml
+  
+          sfImageTransformPlugin:
+            default_adapter: GD # GD or ImageMagick
+            default_image:
+              mime_type: image/png
+              filename: Untitled.png
+              width: 100
+              height: 100
+              color: '#FFFFFF'
+              font_dir: /usr/share/fonts/truetype/msttcorefonts
+              mime_type:
+                auto_detect: true
+
+TO DO
+-----
+
+  * Clean the code
+  * I18N
+  * add option to customize
